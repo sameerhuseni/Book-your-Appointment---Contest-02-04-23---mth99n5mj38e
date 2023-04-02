@@ -1,8 +1,6 @@
-export const addAppointment = (name, time, description) => ({
-  type: 'ADD_APPOINTMENT',
-  payload: {
-    name,
-    time,
-    description
-  }
-});
+export function addAppointment(appointment) {
+    return {
+    type: 'ADD_APPOINTMENT',
+    payload: appointment
+    };
+}
